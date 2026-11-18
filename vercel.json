@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "machinapredict",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/client/$1"
+    }
+  ]
+}
