@@ -1,0 +1,25 @@
+{
+  "name": "machinapredict",
+  "version": "1.0.0",
+  "description": "Industrial telemetry ingestion, CNC predictive tool wear & remaining useful life (RUL) analytics engine",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node server/test/api.test.js",
+    "ml:train": "python ml/train.py",
+    "ml:evaluate": "python ml/evaluate.py",
+    "ml:predict": "python ml/predict.py"
+  },
+  "keywords": [
+    "cnc",
+    "predictive-maintenance",
+    "scikit-learn",
+    "tool-wear",
+    "telemetry",
+    "industry-4.0",
+    "postgresql",
+    "typescript"
+  ],
+  "author": "Nitesh Kumar Tiwary",
+  "license": "MIT"
+}

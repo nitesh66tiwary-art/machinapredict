@@ -1,0 +1,34 @@
+{
+  "model_version": "v1.2.0",
+  "algorithm": "RandomForestClassifier + GradientBoostingRegressor",
+  "trained_on": "High-Speed CNC Milling Telemetry (ISO 3685 Standard)",
+  "features": [
+    "spindle_speed_rpm",
+    "feed_rate_mm_min",
+    "cut_depth_mm",
+    "spindle_load_pct",
+    "vibration_rms_mms",
+    "acoustic_emission_db",
+    "cutting_time_mins"
+  ],
+  "classes": {
+    "0": "Healthy",
+    "1": "Degraded",
+    "2": "Critical (Failure Imminent)"
+  },
+  "metrics": {
+    "classification_accuracy": 0.924,
+    "five_fold_cv_mean": 0.918,
+    "flank_wear_mae_microns": 8.42,
+    "r2_score": 0.9412
+  },
+  "feature_importances": {
+    "cutting_time_mins": 0.384,
+    "vibration_rms_mms": 0.241,
+    "spindle_load_pct": 0.165,
+    "acoustic_emission_db": 0.112,
+    "cut_depth_mm": 0.048,
+    "spindle_speed_rpm": 0.028,
+    "feed_rate_mm_min": 0.022
+  }
+}

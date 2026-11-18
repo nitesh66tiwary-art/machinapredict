@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MachinaPredict — CNC Shop-Floor Telemetry & Tool Health</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation / Status -->
+  <header>
+    <div class="brand-title">
+      <span>MACHINAPREDICT</span>
+      <span class="badge-live">Telemetry Stream Active</span>
+    </div>
+    <div style="font-size: 0.85rem; color: var(--text-muted);">
+      Cell: <strong>Precision Milling Bay 4</strong> | Shift: <strong>A</strong>
+    </div>
+  </header>
+
+  <!-- CNC Machine Fleet Grid -->
+  <main class="machine-grid" id="machineGrid">
+    <!-- Populated dynamically by Vanilla DOM JS -->
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
